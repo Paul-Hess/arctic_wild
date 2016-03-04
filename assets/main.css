@@ -427,7 +427,7 @@ span.down-arrow {
   flex: 2 2 60%;
   text-align: center;
   font-size: 1.3em;
-  transition: all .4s linear; }
+  transition: all 0.4s linear; }
   .title hr {
     background: white;
     width: 45%;
@@ -481,7 +481,7 @@ span.down-arrow {
   left: 60vw;
   z-index: 1;
   overflow: visible;
-  transition: all .3s linear; }
+  transition: all 0.3s linear; }
   .mobile-side-nav:hover, .mobile-side-nav:active, .mobile-side-nav:focus {
     top: 0;
     background: #343433; }
@@ -584,11 +584,11 @@ span.down-arrow {
       height: 100vh / 6; }
       .raft:nth-child(2), .raft:last-of-type {
         width: 100%; } }
-    @media screen and (min-width: 700px) and (min-width: 950px) {
+    @media screen and (min-width: 700px) and (min-width: 900px) {
       .raft:nth-child(2), .raft:last-of-type {
         width: 50%; } }
 
-  @media screen and (min-width: 950px) {
+  @media screen and (min-width: 900px) {
     .raft {
       width: 24%;
       height: 50vh;
@@ -612,11 +612,11 @@ span.down-arrow {
       height: 100vh / 6; }
       .basecamp:nth-child(2), .basecamp:last-of-type {
         width: 100%; } }
-    @media screen and (min-width: 700px) and (min-width: 950px) {
+    @media screen and (min-width: 700px) and (min-width: 900px) {
       .basecamp:nth-child(2), .basecamp:last-of-type {
         width: 50%; } }
 
-  @media screen and (min-width: 950px) {
+  @media screen and (min-width: 900px) {
     .basecamp {
       width: 24%;
       height: 50vh;
@@ -640,11 +640,11 @@ span.down-arrow {
       height: 100vh / 6; }
       .canoe:nth-child(2), .canoe:last-of-type {
         width: 100%; } }
-    @media screen and (min-width: 700px) and (min-width: 950px) {
+    @media screen and (min-width: 700px) and (min-width: 900px) {
       .canoe:nth-child(2), .canoe:last-of-type {
         width: 50%; } }
 
-  @media screen and (min-width: 950px) {
+  @media screen and (min-width: 900px) {
     .canoe {
       width: 24%;
       height: 50vh;
@@ -668,11 +668,11 @@ span.down-arrow {
       height: 100vh / 6; }
       .custom:nth-child(2), .custom:last-of-type {
         width: 100%; } }
-    @media screen and (min-width: 700px) and (min-width: 950px) {
+    @media screen and (min-width: 700px) and (min-width: 900px) {
       .custom:nth-child(2), .custom:last-of-type {
         width: 50%; } }
 
-  @media screen and (min-width: 950px) {
+  @media screen and (min-width: 900px) {
     .custom {
       width: 24%;
       height: 50vh;
@@ -696,11 +696,11 @@ span.down-arrow {
       height: 100vh / 6; }
       .photo:nth-child(2), .photo:last-of-type {
         width: 100%; } }
-    @media screen and (min-width: 700px) and (min-width: 950px) {
+    @media screen and (min-width: 700px) and (min-width: 900px) {
       .photo:nth-child(2), .photo:last-of-type {
         width: 50%; } }
 
-  @media screen and (min-width: 950px) {
+  @media screen and (min-width: 900px) {
     .photo {
       width: 24%;
       height: 50vh;
@@ -724,11 +724,11 @@ span.down-arrow {
       height: 100vh / 6; }
       .backpack:nth-child(2), .backpack:last-of-type {
         width: 100%; } }
-    @media screen and (min-width: 700px) and (min-width: 950px) {
+    @media screen and (min-width: 700px) and (min-width: 900px) {
       .backpack:nth-child(2), .backpack:last-of-type {
         width: 50%; } }
 
-  @media screen and (min-width: 950px) {
+  @media screen and (min-width: 900px) {
     .backpack {
       width: 24%;
       height: 50vh;
@@ -753,7 +753,7 @@ span.down-arrow {
   .feature-title h2 {
     padding-left: .75em;
     color: #FFFFFF; }
-    @media screen and (min-width: 950px) {
+    @media screen and (min-width: 900px) {
       .feature-title h2 {
         font-size: 1em; } }
 

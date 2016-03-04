@@ -90,20 +90,20 @@
   @include center-flex;
   @include transition(.4s);
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: $media-mid-small) {
       background-position: center center;
       width: 50%;
       height: 100vh / 6;
 
       &:nth-child(2), &:last-of-type {
         width: 100%;
-        @media screen and (min-width: 950px) {
+        @media screen and (min-width: $media-large) {
           width: 50%;
         }
       }
   }
 
-  @media screen and (min-width: 950px) {
+  @media screen and (min-width: $media-large) {
     width: 24%;
     height: 50vh;
     flex-wrap: wrap;

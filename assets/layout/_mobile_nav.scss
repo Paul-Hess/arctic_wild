@@ -7,13 +7,13 @@
   left: 60vw;
   z-index: 1;
   overflow: visible;
-  transition: all .3s linear;
+  @include transition(.3s);
   @include on-event {
     top: 0;
     background: $dark-grey;
   }
 
-  @media screen and (min-width: 780px) {
+  @media screen and (min-width: $media-medium) {
     display: none;
   }
 }
