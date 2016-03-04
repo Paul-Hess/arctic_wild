@@ -76,7 +76,7 @@
 
 @mixin center-flex {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -90,7 +90,22 @@
   @include center-flex;
   @include transition(.4s);
 
-@media screen and (min-width: 700px) {
-    background-position: center center;
-}
+  @media screen and (min-width: 700px) {
+      background-position: center center;
+      width: 50%;
+      height: 100vh / 6;
+
+      &:nth-child(2), &:last-of-type {
+        width: 100%;
+        @media screen and (min-width: 950px) {
+          width: 50%;
+        }
+      }
+  }
+
+  @media screen and (min-width: 950px) {
+    width: 24%;
+    height: 50vh;
+    flex-wrap: wrap;
+  }
 }

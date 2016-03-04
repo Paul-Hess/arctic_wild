@@ -2,10 +2,28 @@
 	@include flexy($justify: space-around);
 	align-items: center;
 	height: 250vh;
+	@include transition(.4s);
+
+	@media screen and (min-width: 700px) {
+		height: 100vh;
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
 }
 
 .feature-nav {
 	display: none;
+
+	@media screen and (min-width: 700px) {
+		display: flex;
+		width: 100%;
+		background: $dark-grey;
+		height: 20vh;
+		justify-content: space-around;
+		align-items: center;
+	}
 }
 
 .feature-icon {
@@ -14,6 +32,12 @@
 	border-radius: 100%;
 	background: rgba($dark-grey, 0.8);
 	@include center-flex;
+
+	@media screen and (min-width: 700px) {
+		width: 6vw;
+		height: 6vw;
+	}
+
 
 	&:hover {
 		@include icon-grow;
@@ -40,15 +64,23 @@
 	order: -1;
 	flex: .5 .5 10%;
 	hr {
-		width: 10%;
+		width: 80px;
 		height: 1vh;
 		background: $brand-color;
 		border: none;
 		margin: 1em 1em 0;
+
+		@media screen and (min-width: 700px) {
+			width: 100px;
+		}
 	}
 
 	h2 {
 		padding-left: .75em;
 		color: $text-color-light;
+
+		@media screen and (min-width: 950px) {
+			font-size: 1em;
+		}
 	}
 }

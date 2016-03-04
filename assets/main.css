@@ -518,10 +518,26 @@ span.down-arrow {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 250vh; }
+  height: 250vh;
+  transition: all 0.4s linear; }
+  @media screen and (min-width: 700px) {
+    .gallery-body {
+      height: 100vh;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      flex-direction: row; } }
 
 .feature-nav {
   display: none; }
+  @media screen and (min-width: 700px) {
+    .feature-nav {
+      display: flex;
+      width: 100%;
+      background: #343433;
+      height: 20vh;
+      justify-content: space-around;
+      align-items: center; } }
 
 .feature-icon {
   width: 10vw;
@@ -529,8 +545,12 @@ span.down-arrow {
   border-radius: 100%;
   background: rgba(52, 52, 51, 0.8);
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center; }
+  @media screen and (min-width: 700px) {
+    .feature-icon {
+      width: 6vw;
+      height: 6vw; } }
   .feature-icon:hover {
     -webkit-animation: icon-grow .4s linear;
     -moz-animation: icon-grow .3s linear;
@@ -554,12 +574,25 @@ span.down-arrow {
   width: 90%;
   height: 35vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   transition: all 0.4s linear; }
   @media screen and (min-width: 700px) {
     .raft {
-      background-position: center center; } }
+      background-position: center center;
+      width: 50%;
+      height: 100vh / 6; }
+      .raft:nth-child(2), .raft:last-of-type {
+        width: 100%; } }
+    @media screen and (min-width: 700px) and (min-width: 950px) {
+      .raft:nth-child(2), .raft:last-of-type {
+        width: 50%; } }
+
+  @media screen and (min-width: 950px) {
+    .raft {
+      width: 24%;
+      height: 50vh;
+      flex-wrap: wrap; } }
 
 .basecamp {
   background: url("../img/basecamp.jpg");
@@ -569,12 +602,25 @@ span.down-arrow {
   width: 90%;
   height: 35vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   transition: all 0.4s linear; }
   @media screen and (min-width: 700px) {
     .basecamp {
-      background-position: center center; } }
+      background-position: center center;
+      width: 50%;
+      height: 100vh / 6; }
+      .basecamp:nth-child(2), .basecamp:last-of-type {
+        width: 100%; } }
+    @media screen and (min-width: 700px) and (min-width: 950px) {
+      .basecamp:nth-child(2), .basecamp:last-of-type {
+        width: 50%; } }
+
+  @media screen and (min-width: 950px) {
+    .basecamp {
+      width: 24%;
+      height: 50vh;
+      flex-wrap: wrap; } }
 
 .canoe {
   background: url("../img/canoe.jpg");
@@ -584,12 +630,25 @@ span.down-arrow {
   width: 90%;
   height: 35vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   transition: all 0.4s linear; }
   @media screen and (min-width: 700px) {
     .canoe {
-      background-position: center center; } }
+      background-position: center center;
+      width: 50%;
+      height: 100vh / 6; }
+      .canoe:nth-child(2), .canoe:last-of-type {
+        width: 100%; } }
+    @media screen and (min-width: 700px) and (min-width: 950px) {
+      .canoe:nth-child(2), .canoe:last-of-type {
+        width: 50%; } }
+
+  @media screen and (min-width: 950px) {
+    .canoe {
+      width: 24%;
+      height: 50vh;
+      flex-wrap: wrap; } }
 
 .custom {
   background: url("../img/custom.jpg");
@@ -599,12 +658,25 @@ span.down-arrow {
   width: 90%;
   height: 35vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   transition: all 0.4s linear; }
   @media screen and (min-width: 700px) {
     .custom {
-      background-position: center center; } }
+      background-position: center center;
+      width: 50%;
+      height: 100vh / 6; }
+      .custom:nth-child(2), .custom:last-of-type {
+        width: 100%; } }
+    @media screen and (min-width: 700px) and (min-width: 950px) {
+      .custom:nth-child(2), .custom:last-of-type {
+        width: 50%; } }
+
+  @media screen and (min-width: 950px) {
+    .custom {
+      width: 24%;
+      height: 50vh;
+      flex-wrap: wrap; } }
 
 .photo {
   background: url("../img/photo.jpg");
@@ -614,12 +686,25 @@ span.down-arrow {
   width: 90%;
   height: 35vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   transition: all 0.4s linear; }
   @media screen and (min-width: 700px) {
     .photo {
-      background-position: center center; } }
+      background-position: center center;
+      width: 50%;
+      height: 100vh / 6; }
+      .photo:nth-child(2), .photo:last-of-type {
+        width: 100%; } }
+    @media screen and (min-width: 700px) and (min-width: 950px) {
+      .photo:nth-child(2), .photo:last-of-type {
+        width: 50%; } }
+
+  @media screen and (min-width: 950px) {
+    .photo {
+      width: 24%;
+      height: 50vh;
+      flex-wrap: wrap; } }
 
 .backpack {
   background: url("../img/backpack.jpg");
@@ -629,12 +714,25 @@ span.down-arrow {
   width: 90%;
   height: 35vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   transition: all 0.4s linear; }
   @media screen and (min-width: 700px) {
     .backpack {
-      background-position: center center; } }
+      background-position: center center;
+      width: 50%;
+      height: 100vh / 6; }
+      .backpack:nth-child(2), .backpack:last-of-type {
+        width: 100%; } }
+    @media screen and (min-width: 700px) and (min-width: 950px) {
+      .backpack:nth-child(2), .backpack:last-of-type {
+        width: 50%; } }
+
+  @media screen and (min-width: 950px) {
+    .backpack {
+      width: 24%;
+      height: 50vh;
+      flex-wrap: wrap; } }
 
 .feature-title {
   display: flex;
@@ -644,13 +742,19 @@ span.down-arrow {
   order: -1;
   flex: .5 .5 10%; }
   .feature-title hr {
-    width: 10%;
+    width: 80px;
     height: 1vh;
     background: #DC7725;
     border: none;
     margin: 1em 1em 0; }
+    @media screen and (min-width: 700px) {
+      .feature-title hr {
+        width: 100px; } }
   .feature-title h2 {
     padding-left: .75em;
     color: #FFFFFF; }
+    @media screen and (min-width: 950px) {
+      .feature-title h2 {
+        font-size: 1em; } }
 
 /*# sourceMappingURL=main.css.map */
