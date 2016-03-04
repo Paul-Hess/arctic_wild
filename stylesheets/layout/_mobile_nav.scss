@@ -1,0 +1,44 @@
+.mobile-side-nav {
+  height: $mobile-nav-height;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: -$mobile-nav-height + 4vh;
+  left: 60vw;
+  z-index: 1;
+  overflow: visible;
+  transition: all .2s linear;
+  @include on-event {
+    top: 0;
+    background: rgba(255,255,255, 0.4);
+  }
+
+  @media screen and (min-width: 780px) {
+    display: none;
+  }
+}
+
+.mobile-nav-group {
+  display: flex;
+  flex-direction: column;
+
+  & a {
+    border-bottom: .4px solid rgba(255,255,255, 0.7);
+  }
+}
+
+.nav-button {
+  height: 14vh;
+  width: 40vw;
+
+  display:  flex;
+  flex-direction: column;
+  justify-content: flex-end;
+   p {
+     color: white;
+     padding: 1em;
+     align-self: flex-end;
+   }
+}

@@ -1,0 +1,45 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the non-mobile-header of the site/application.
+// -----------------------------------------------------------------------------
+.header {
+  background: url('../img/hero-slide1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  @media screen and (max-width: 780px) {
+    justify-content: space-between;
+    background-position: 71% 60%;
+  }
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  @media screen and (max-width: 780px) {
+    justify-content: flex-start;
+  }
+
+
+  & > a {
+    &:nth-child(2), &:last-of-type {
+      @media screen and (max-width: 780px) {
+      display: none;
+     }
+    }
+  }
+}
+
+.nav-group {
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 780px) {
+    display: none;
+  }
+}
