@@ -1,0 +1,19 @@
+@mixin icon-grow {
+
+	-webkit-animation: icon-grow .4s linear;
+	-moz-animation:  icon-grow .3s linear;
+	-o-animation:  icon-grow .3s linear;
+	animation:  icon-grow .4s linear forwards;
+
+	@keyframes icon-grow {
+		100% {transform: scale(2);}
+	}
+}
+
+@mixin icon-turn {
+	animation: icon-turn .4s linear;
+	@keyframes icon-turn {
+		100% { transform: rotate(270deg);}
+	}
+}
+

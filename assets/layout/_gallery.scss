@@ -1,0 +1,54 @@
+.gallery-body {
+	@include flexy($justify: space-around);
+	align-items: center;
+	height: 250vh;
+}
+
+.feature-nav {
+	display: none;
+}
+
+.feature-icon {
+	width: 10vw;
+	height: 10vw;
+	border-radius: 100%;
+	background: rgba($dark-grey, 0.8);
+	@include center-flex;
+
+	&:hover {
+		@include icon-grow;
+	}
+
+
+	img {
+		max-width: 60%;
+		&:hover {
+			@include icon-turn;
+		}
+	}
+}
+
+@each $gallery in raft, basecamp, canoe, custom, photo, backpack {
+	.#{$gallery} {
+		@include gallery-item($gallery);
+	}
+}	
+
+.feature-title {
+	@include flexy;
+	align-self: flex-end;
+	order: -1;
+	flex: .5 .5 10%;
+	hr {
+		width: 10%;
+		height: 1vh;
+		background: $brand-color;
+		border: none;
+		margin: 1em 1em 0;
+	}
+
+	h2 {
+		padding-left: .75em;
+		color: $text-color-light;
+	}
+}

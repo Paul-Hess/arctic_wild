@@ -1,0 +1,42 @@
+.mobile-side-nav {
+  height: $mobile-nav-height;
+  width: 40vw;
+  @include flexy;
+  position: absolute;
+  top: -$mobile-nav-height + 6.5vh;
+  left: 60vw;
+  z-index: 1;
+  overflow: visible;
+  transition: all .3s linear;
+  @include on-event {
+    top: 0;
+    background: $dark-grey;
+  }
+
+  @media screen and (min-width: 780px) {
+    display: none;
+  }
+}
+
+.mobile-nav-group {
+ @include flexy($justify: flex-start);
+
+  & a {
+   @include dropdown;
+    &:hover {
+      color: $brand-color;
+    }
+  }
+}
+
+.nav-button {
+  height: 14vh;
+  width: 40vw;
+  @include flexy($justify: flex-end);
+   p {
+     color: $text-color-light;
+     font-size: 1.3em;
+     padding: 0 .3em 0 0;
+     align-self: flex-end;
+   }
+}
