@@ -23,11 +23,15 @@ html {
  * Basic styles for links
  */
 a {
-  color: $brand-color;
+  color: $text-color-light;
   text-decoration: none;
 
   @include on-event {
-    color: $text-color;
-    text-decoration: underline;
+    color: $brand-color;
+    text-decoration: none;
   }
+}
+
+span.down-arrow {
+	@include down-arrow;
 }

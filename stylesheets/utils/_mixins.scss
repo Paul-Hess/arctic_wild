@@ -47,3 +47,18 @@
     @content;
   }
 }
+
+
+@mixin flexy($direction: column, $justify: space-between) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+}
+
+@mixin down-arrow {
+  width: 0;
+  height: 0;
+  border-top: .5em solid $brand-color;
+  border-left: .5em solid transparent;
+  border-right: .5em solid transparent;
+}

@@ -20,23 +20,27 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 
 /// Copy text color
 /// @type Color
-$text-color: #222 !default;
+$text-color-light: #FFFFFF !default;
+
+/// Alt text color 
+/// @type Color 
+$text-color-dark: #494946 !default;
 
 /// Main brand color
 /// @type Color
-$brand-color: #E50050 !default;
+$brand-color: #DC7725 !default;
 
 /// Light grey
 /// @type Color
-$light-grey: #EDEDED !default;
+$light-grey: #E0E0E0 !default;
 
 /// Medium grey
 /// @type Color
-$mid-grey: #999 !default;
+$mid-grey: #646461 !default;
 
 /// Dark grey
 /// @type Color
-$dark-grey: #444 !default;
+$dark-grey: #343433 !default;
 
 
 

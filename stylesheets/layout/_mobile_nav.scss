@@ -5,14 +5,14 @@
   flex-direction: column;
   justify-content: space-between;
   position: absolute;
-  top: -$mobile-nav-height + 4vh;
+  top: -$mobile-nav-height + 6.5vh;
   left: 60vw;
   z-index: 1;
   overflow: visible;
-  transition: all .2s linear;
+  transition: all .3s linear;
   @include on-event {
     top: 0;
-    background: rgba(255,255,255, 0.4);
+    background: $dark-grey;
   }
 
   @media screen and (min-width: 780px) {
@@ -25,7 +25,12 @@
   flex-direction: column;
 
   & a {
-    border-bottom: .4px solid rgba(255,255,255, 0.7);
+    border-bottom: .4px solid $mid-grey;
+    padding: .5em;
+    color: $light-grey;
+    &:hover {
+      color: $brand-color;
+    }
   }
 }
 
@@ -37,8 +42,9 @@
   flex-direction: column;
   justify-content: flex-end;
    p {
-     color: white;
-     padding: 1em;
+     color: $text-color-light;
+     font-size: 1.3em;
+     padding: 0 .3em 0 0  ;
      align-self: flex-end;
    }
 }
